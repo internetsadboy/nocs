@@ -5,7 +5,7 @@ A cli utility for viewing node docs
 ### Installation
 
 ```
-npm install nocs -g
+$ npm install nocs -g
 ```
 
 ### Usage
@@ -26,7 +26,7 @@ opens file:///node_modules/nocs/node_docs/os.html using google chrome
 ### API
 
 ```
-nocs <option>
+$ nocs <option>
 ```
 
 ### Options
