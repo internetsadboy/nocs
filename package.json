@@ -1,6 +1,6 @@
 {
   "name": "nocs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cli utility for viewing node documentation",
   "main": "index.js",
   "directories": {
@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/ghostsnstuff/nocs/issues"
   },
-  "homepage": "https://github.com/ghostsnstuff/nocs"
+  "homepage": "https://github.com/ghostsnstuff/nocs",
+  "dependencies": {
+    "underscore": "^1.7.0"
+  }
 }

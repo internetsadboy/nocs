@@ -1,3 +1,4 @@
+.DS_Store
 lib/node_docs/*
 node_modules
 *.log
