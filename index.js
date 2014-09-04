@@ -10,7 +10,7 @@ var spawn = require('child_process').spawn,
 
 var args;
 
-args = process.argv.slice(1);
+args = process.argv.slice(2);
 
 // configuration option, get/set browser
 if (args.length >= 3) {
