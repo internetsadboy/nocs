@@ -1,0 +1,33 @@
+{
+  "name": "nocs",
+  "version": "0.0.1",
+  "description": "cli utility for viewing node documentation",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ghostsnstuff/nocs.git"
+  },
+  "keywords": [
+    "node",
+    "docs",
+    "documentation",
+    "api",
+    "cli"
+  ],
+  "preferGlobal": true,
+  "bin": {
+    "nocs": "./index.js"
+  },
+  "author": "gns <@gns>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghostsnstuff/nocs/issues"
+  },
+  "homepage": "https://github.com/ghostsnstuff/nocs"
+}
