@@ -14,20 +14,20 @@ args = process.argv.slice(1);
 
 // configuration option, get/set browser
 if (args.length >= 3) {
-  if (args[0] === 'config') {
-    if (args[1] === 'get') {
+  if (args[1] === 'config') {
+    if (args[2] === 'get') {
       log(require('./lib/config').browser);
-    } else if (args[1] === 'set') {
+    } else if (args[2] === 'set') {
       var browser;
 
-      if (args[3] === 'chrome') {
+      if (args[4] === 'chrome') {
         browser = 'google\ chrome';
-      } else if (args[3] === 'safari') {
+      } else if (args[4] === 'safari') {
         browser = 'safari';
-      } else if (args[3] === 'firefox') {
+      } else if (args[4] === 'firefox') {
         browser = 'firefox';
       } else {
-        log(new Error('invalid browser name ' + args[3]));
+        log(new Error('invalid browser name ' + args[4]));
         log('>> Supported browsers: chrome, safari, firefox');
       }
 
@@ -63,7 +63,7 @@ if (args.length >= 3) {
       file = process.cwd() + '/lib/node_docs/' + module + '.html';
 
       // spawn chrome, open docs
-      child = spawn('open', ['-a', 'google\ chrome', file]);
+      child = spawn('open', ['-a', require('./lib/config')['browser'], file]);
     } else {
 
       // invalid module
