@@ -12,8 +12,12 @@ var args;
 
 args = process.argv.slice(2);
 
-// configuration option, get/set browser
-if (args.length >= 3) {
+// wtf is nocs
+if(args.length === 0) {
+  help();
+} else if (args.length >= 3) {
+
+  // configuration option, get/set browser
   if (args[1] === 'config') {
     if (args[2] === 'get') {
       log(require('./lib/config').browser);
